@@ -1,0 +1,219 @@
+// Google Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+// Mix-Ins
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Variables
+
+$first-color: white;
+$second-color: #1a1a78;
+$third-color: #20cad6;
+$paragraph-font-size: 1.2rem;
+$header-font-size: 3rem;
+
+// Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// REUSABLE CLASSES
+
+.grid {
+    display: grid;
+}
+
+.img {
+    width: 100%;
+}
+
+// NAVBAR
+
+.hero {
+    background-image: url("../images/IgDe1Zf.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    
+    .hamburger {
+        margin-right: 3rem;
+        display: none;
+
+        .fa-bars{
+            transform: scale(2);
+            cursor: pointer;
+        }
+    }
+
+    .logo {
+        margin-right: auto;
+        display: inline-block;
+        padding-left: 5rem;
+        font-family: 'Luckiest Guy', fantasy;
+        font-size: 2.5rem;
+
+    }
+
+    .nav__link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 6rem;
+
+        .nav__item {
+            display: inline-block;
+            padding-left: 4rem;
+            
+            a {
+                color: $first-color;
+                font-size: 1.3rem;
+                font-family: 'Montserrat', sans-serif;
+                transition: all .2s linear;
+                cursor: pointer;
+
+                &:hover {
+                    color: $third-color;
+                }
+            }
+
+        }
+    }
+}
+
+// INTRO
+
+.content {
+    height: 120vh;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    position: relative;
+
+    &::after {
+        content: '';
+        width: 70%;
+        height: 2px;
+        background-color: $first-color;
+        position: absolute;
+        bottom: 9%;
+        left: 15%;
+    }
+    
+    .text {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .title {
+        font-size: $header-font-size;
+        color: black;
+        font-weight: 900;
+        span {
+            color: $third-color;
+            transition: all .2s linear;
+
+            &:hover {
+                color: $second-color;
+            }
+        }
+    }
+    .paragraph {
+        font-size: $paragraph-font-size;
+        color: black;
+    }
+}
+
+.career {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    background-color: #2D253A;
+    height: auto;
+    color: $first-color;
+    position: relative;
+
+    .career__title {
+        font-size: $header-font-size;
+        text-decoration: underline;
+        padding-bottom: 5rem;
+        padding-top: 2rem;
+    }
+
+    .career__paragraph {
+        font-size: $paragraph-font-size;
+        padding: 0 3rem 12%;
+    }
+
+    .break {
+        width: 70%;
+        height: 2px;
+        background-color: $first-color;
+        margin: 0 auto;
+    }
+}
+
+.contact {
+    background-color: #2D253A;
+    height: 50vh;
+
+    .contact__title {
+        font-family: "Montserrat", sans-serif;
+        font-size: $header-font-size;
+        text-align: center;
+        color: $first-color;
+        padding-top: 5rem;
+        text-decoration: underline;
+    }
+
+    .contact__list {
+        display: flex;
+        justify-content: center;
+
+        .fab {
+            transform: scale(3);
+            color: $first-color;
+            margin: 3rem 3rem;
+            cursor: pointer;
+        }
+    }
+}
+
+.copyright {
+        text-align: center;
+        background-color: #2D253A;
+        padding-bottom: 20px;
+        font-size: $paragraph-font-size;
+        font-family: "Montserrat", sans-serif;
+}

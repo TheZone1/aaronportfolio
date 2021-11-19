@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.img {
+  width: 100%;
+}
+
+.hero {
+  background-image: url("../images/IgDe1Zf.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.navbar .hamburger {
+  margin-right: 3rem;
+  display: none;
+}
+
+.navbar .hamburger .fa-bars {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  cursor: pointer;
+}
+
+.navbar .logo {
+  margin-right: auto;
+  display: inline-block;
+  padding-left: 5rem;
+  font-family: 'Luckiest Guy', fantasy;
+  font-size: 2.5rem;
+}
+
+.navbar .nav__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 6rem;
+}
+
+.navbar .nav__link .nav__item {
+  display: inline-block;
+  padding-left: 4rem;
+}
+
+.navbar .nav__link .nav__item a {
+  color: white;
+  font-size: 1.3rem;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  cursor: pointer;
+}
+
+.navbar .nav__link .nav__item a:hover {
+  color: #20cad6;
+}
+
+.content {
+  height: 120vh;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+.content::after {
+  content: '';
+  width: 70%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: 9%;
+  left: 15%;
+}
+
+.content .text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.content .title {
+  font-size: 3rem;
+  color: black;
+  font-weight: 900;
+}
+
+.content .title span {
+  color: #20cad6;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.content .title span:hover {
+  color: #1a1a78;
+}
+
+.content .paragraph {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.career {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  background-color: #2D253A;
+  height: auto;
+  color: white;
+  position: relative;
+}
+
+.career .career__title {
+  font-size: 3rem;
+  text-decoration: underline;
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+}
+
+.career .career__paragraph {
+  font-size: 1.2rem;
+  padding: 0 3rem 12%;
+}
+
+.career .break {
+  width: 70%;
+  height: 2px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.contact {
+  background-color: #2D253A;
+  height: 50vh;
+}
+
+.contact .contact__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  padding-top: 5rem;
+  text-decoration: underline;
+}
+
+.contact .contact__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .contact__list .fab {
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  color: white;
+  margin: 3rem 3rem;
+  cursor: pointer;
+}
+
+.copyright {
+  text-align: center;
+  background-color: #2D253A;
+  padding-bottom: 20px;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
